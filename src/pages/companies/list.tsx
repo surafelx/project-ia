@@ -122,7 +122,7 @@ const UserListPage: FC = function () {
 const AddUserModal: FC = function () {
   const [isOpen, setOpen] = useState(false);
 
-  const [section, setSection] = useState("company");
+  const [, setSection] = useState("company");
 
   const changeSection = (sectionName: string) => {
     setSection(sectionName);

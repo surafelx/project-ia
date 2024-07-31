@@ -1,22 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import classNames from "classnames";
-import { Dropdown, Sidebar, TextInput, Tooltip } from "flowbite-react";
+import {  Sidebar, TextInput, Tooltip } from "flowbite-react";
 import type { FC } from "react";
 import { useEffect, useState } from "react";
 import {
-  HiAdjustments,
   HiChartPie,
-  HiChartSquareBar,
   HiClipboard,
   HiCog,
   HiCollection,
-  HiInboxIn,
   HiInformationCircle,
-  HiLockClosed,
   HiSearch,
   HiChip,
   HiUsers,
-  HiViewGrid,
 } from "react-icons/hi";
 
 import { useSidebarContext } from "../context/SidebarContext";
@@ -27,8 +22,8 @@ const ExampleSidebar: FC = function () {
     useSidebarContext();
 
   const [currentPage, setCurrentPage] = useState("");
-  const [isEcommerceOpen, setEcommerceOpen] = useState(true);
-  const [isUsersOpen, setUsersOpen] = useState(true);
+  const [, setEcommerceOpen] = useState(true);
+  const [, setUsersOpen] = useState(true);
 
   useEffect(() => {
     const newPage = window.location.pathname;
